@@ -21,11 +21,11 @@
     --serif: 'Cormorant Garamond', Georgia, serif;
     --sans: 'Outfit', system-ui, sans-serif;
   }
- 
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   html { scroll-behavior: smooth; font-size: 16px; }
- 
+
   body {
     background: var(--black);
     color: var(--white);
@@ -34,14 +34,14 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
- 
+
   ::selection { background: var(--gold); color: var(--black); }
- 
+
   /* ── SCROLLBAR ── */
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--black); }
   ::-webkit-scrollbar-thumb { background: var(--gold-muted); border-radius: 2px; }
- 
+
   /* ── GRID OVERLAY ── */
   body::before {
     content: '';
@@ -54,7 +54,7 @@
     pointer-events: none;
     z-index: 0;
   }
- 
+
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -102,16 +102,16 @@
   }
   .nav-links a:hover { color: var(--gold); }
   .nav-links a:hover::after { transform: scaleX(1); }
- 
+
   /* ── SECTION BASE ── */
   section { position: relative; z-index: 1; }
- 
+
   .container {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 2rem;
   }
- 
+
   .section-label {
     font-size: 0.72rem;
     font-weight: 500;
@@ -130,7 +130,7 @@
     height: 1px;
     background: var(--gold);
   }
- 
+
   .section-title {
     font-family: var(--serif);
     font-size: clamp(2.2rem, 4vw, 3.2rem);
@@ -139,7 +139,7 @@
     color: var(--white);
     margin-bottom: 1rem;
   }
- 
+
   /* ── HERO ── */
   #hero {
     min-height: 100vh;
@@ -151,9 +151,9 @@
     max-width: 1200px;
     margin: 0 auto;
   }
- 
+
   .hero-left { max-width: 600px; }
- 
+
   .hero-eyebrow {
     font-size: 0.72rem;
     font-weight: 500;
@@ -172,7 +172,7 @@
     height: 1px;
     background: var(--gold);
   }
- 
+
   .hero-name {
     font-family: var(--serif);
     font-size: clamp(3.5rem, 6vw, 5.5rem);
@@ -182,7 +182,7 @@
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
   }
- 
+
   .hero-headline {
     font-family: var(--serif);
     font-size: clamp(1.05rem, 1.5vw, 1.25rem);
@@ -193,7 +193,7 @@
     letter-spacing: 0.02em;
     line-height: 1.5;
   }
- 
+
   .hero-subheadline {
     font-size: 0.9rem;
     font-weight: 400;
@@ -201,7 +201,7 @@
     margin-bottom: 0.5rem;
     letter-spacing: 0.03em;
   }
- 
+
   .hero-location {
     font-size: 0.78rem;
     color: var(--white-faint);
@@ -212,7 +212,7 @@
     gap: 0.4rem;
   }
   .hero-location::before { content: '◈'; color: var(--gold); font-size: 0.65rem; }
- 
+
   .hero-tagline {
     font-family: var(--serif);
     font-size: 1.05rem;
@@ -223,9 +223,9 @@
     margin-bottom: 2.5rem;
     line-height: 1.6;
   }
- 
+
   .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
- 
+
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -242,7 +242,7 @@
     transition: background 0.25s, transform 0.2s;
   }
   .btn-primary:hover { background: var(--gold-bright); transform: translateY(-2px); }
- 
+
   .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -260,13 +260,13 @@
     transition: border-color 0.25s, color 0.25s, transform 0.2s;
   }
   .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
- 
+
   .hero-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
- 
+
   .hero-photo-wrapper {
     position: relative;
     width: 340px;
@@ -311,7 +311,7 @@
     color: var(--gold-muted);
     user-select: none;
   }
- 
+
   .hero-stats {
     position: absolute;
     bottom: -24px;
@@ -340,7 +340,7 @@
     display: block;
     margin-top: 0.3rem;
   }
- 
+
   /* ── ABOUT ── */
   #about {
     padding: 8rem 0;
@@ -379,7 +379,7 @@
     transition: border-color 0.2s, color 0.2s;
   }
   .hobby-tag:hover { border-color: var(--gold); color: var(--gold); }
- 
+
   .about-philosophy {
     margin-top: 2.5rem;
     padding: 1.5rem;
@@ -394,7 +394,7 @@
     line-height: 1.6;
     margin: 0;
   }
- 
+
   .about-right {}
   .about-certbadges { margin-bottom: 2rem; }
   .about-certbadges h4 {
@@ -404,7 +404,7 @@
     color: var(--gold);
     margin-bottom: 1.25rem;
   }
- 
+
   /* ── SKILLS ── */
   .skills-grid { display: flex; flex-direction: column; gap: 1rem; }
   .skill-row { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -423,7 +423,7 @@
     background: var(--gold);
     transition: width 1s ease;
   }
- 
+
   /* ── EXPERIENCE ── */
   #experience { padding: 8rem 0; }
   .exp-card {
@@ -478,7 +478,7 @@
     font-size: 0.75rem;
     top: 0.05em;
   }
- 
+
   /* ── SIMULATIONS ── */
   #simulations { padding: 8rem 0; background: var(--navy); border-top: 1px solid var(--border-dim); border-bottom: 1px solid var(--border-dim); }
   .sim-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 1.5rem; }
@@ -525,11 +525,11 @@
   }
   .sim-mckinsey .sim-company { color: var(--gold-bright); border-color: rgba(226,187,90,0.4); }
   @media (max-width: 900px) { .sim-grid { grid-template-columns: 1fr; } }
- 
+
   /* ── PROJECTS ── */
   #projects { padding: 8rem 0; background: var(--navy); border-top: 1px solid var(--border-dim); border-bottom: 1px solid var(--border-dim); }
   .projects-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
- 
+
   .project-card {
     border: 1px solid var(--border);
     padding: 2.5rem;
@@ -548,9 +548,9 @@
   }
   .project-card:hover { border-color: var(--gold-muted); }
   .project-card:hover::before { height: 100%; }
- 
+
   .project-card.featured { background: rgba(201,168,76,0.04); }
- 
+
   .project-tag {
     display: inline-block;
     font-size: 0.68rem;
@@ -590,7 +590,7 @@
     border: 1px solid rgba(255,255,255,0.07);
     letter-spacing: 0.03em;
   }
- 
+
   /* ── EDUCATION ── */
   #education { padding: 8rem 0; }
   .edu-table { width: 100%; border-collapse: collapse; }
@@ -614,7 +614,7 @@
   .edu-table tr:hover td { background: rgba(201,168,76,0.03); color: var(--white); }
   .edu-degree { font-weight: 500; color: var(--white) !important; font-size: 0.95rem !important; }
   .edu-score { color: var(--gold) !important; font-weight: 500 !important; font-size: 0.95rem !important; }
- 
+
   /* ── CERTIFICATIONS ── */
   #certifications { padding: 8rem 0; background: var(--navy); border-top: 1px solid var(--border-dim); border-bottom: 1px solid var(--border-dim); }
   .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1px; background: var(--border-dim); }
@@ -647,7 +647,7 @@
     flex-wrap: wrap;
   }
   .cert-score { color: var(--gold-bright); font-weight: 500; }
- 
+
   /* ── SELF-INITIATED PROJECTS ── */
   #self-projects { padding: 8rem 0; }
   .self-proj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
@@ -690,7 +690,7 @@
   }
   .self-proj-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-size: 0.72rem; top: 0.08em; }
   @media (max-width: 900px) { .self-proj-grid { grid-template-columns: 1fr; } }
- 
+
   /* ── AWARDS ── */
   #awards { padding: 8rem 0; }
   .awards-leadership-grid {
@@ -718,7 +718,7 @@
   }
   .award-text { font-size: 0.9rem; color: var(--white-dim); line-height: 1.6; }
   .award-text strong { color: var(--white); font-weight: 500; }
- 
+
   .leadership-list { display: flex; flex-direction: column; gap: 1rem; }
   .leadership-item {
     padding: 1.25rem 1.5rem;
@@ -731,7 +731,7 @@
   }
   .leadership-item:hover { border-color: var(--gold); background: rgba(201,168,76,0.07); }
   .leadership-item strong { color: var(--white); display: block; font-weight: 500; margin-bottom: 0.1rem; }
- 
+
   /* ── THOUGHTS ── */
   #thoughts { padding: 8rem 0; background: var(--navy); border-top: 1px solid var(--border-dim); border-bottom: 1px solid var(--border-dim); }
   .thoughts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -763,16 +763,15 @@
     position: relative;
     z-index: 1;
   }
- 
+
   /* ── CONTACT ── */
   #contact { padding: 8rem 0; }
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: start;
+  .contact-info-only {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 560px;
   }
-  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
   .contact-item {
     display: flex;
     align-items: flex-start;
@@ -800,7 +799,7 @@
   .contact-detail-val { color: var(--white-dim); }
   .contact-detail-val a { color: var(--white-dim); text-decoration: none; transition: color 0.2s; }
   .contact-detail-val a:hover { color: var(--gold); }
- 
+
   .contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
   .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
   .form-label {
@@ -824,7 +823,7 @@
   }
   .form-input:focus, .form-textarea:focus { border-color: var(--gold-muted); }
   .form-textarea { min-height: 130px; }
- 
+
   /* ── FOOTER ── */
   footer {
     background: var(--black);
@@ -857,7 +856,7 @@
     transition: color 0.2s;
   }
   .footer-links a:hover { color: var(--gold); }
- 
+
   /* ── ANIMATIONS ── */
   .fade-in {
     opacity: 0;
@@ -865,12 +864,12 @@
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
- 
+
   .fade-in-delay-1 { transition-delay: 0.1s; }
   .fade-in-delay-2 { transition-delay: 0.2s; }
   .fade-in-delay-3 { transition-delay: 0.3s; }
   .fade-in-delay-4 { transition-delay: 0.45s; }
- 
+
   /* ── SECTION HEADER ── */
   .section-header { margin-bottom: 3.5rem; }
   .section-header p {
@@ -880,7 +879,7 @@
     margin-top: 0.75rem;
     line-height: 1.8;
   }
- 
+
   /* ── GOLD DIVIDER ── */
   .gold-divider {
     display: flex;
@@ -898,7 +897,7 @@
     color: var(--gold);
     font-size: 0.6rem;
   }
- 
+
   /* ── SOFT SKILLS GRID ── */
   .soft-skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1px; background: var(--border-dim); margin-top: 2rem; }
   .soft-skill-card {
@@ -909,7 +908,7 @@
   .soft-skill-card:hover { background: rgba(201,168,76,0.04); }
   .soft-skill-title { font-size: 0.85rem; font-weight: 500; color: var(--white); margin-bottom: 0.35rem; }
   .soft-skill-desc { font-size: 0.78rem; color: var(--white-faint); line-height: 1.6; }
- 
+
   /* ── SCROLL HINT ── */
   .scroll-hint {
     position: absolute;
@@ -930,10 +929,10 @@
   }
   .scroll-hint-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; }
   @keyframes scrollLine { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
- 
+
   /* ── MOBILE NAV TOGGLE ── */
   .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; color: var(--white); font-size: 1.4rem; }
- 
+
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     nav.scrolled { padding: 0.75rem 1.5rem; }
@@ -962,7 +961,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">Jatin <span>Sharma</span></a>
@@ -978,7 +977,7 @@
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
 </nav>
- 
+
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left fade-in">
@@ -1020,7 +1019,7 @@
     <span class="scroll-hint-label">Scroll</span>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
@@ -1107,7 +1106,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
@@ -1133,7 +1132,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- VIRTUAL SIMULATIONS -->
 <section id="simulations">
   <div class="container">
@@ -1143,7 +1142,7 @@
       <p>Hands-on simulations with Deloitte, Goldman Sachs, TCS, Bloomberg, and McKinsey — real deliverables, real firm problems.</p>
     </div>
     <div class="sim-grid">
- 
+
       <div class="sim-card fade-in">
         <div class="sim-header">
           <span class="sim-company">Deloitte · Forage</span>
@@ -1155,7 +1154,7 @@
           <li>Applied nested IF/AND Excel logic to classify employee compensation equity across a full dataset with edge-case validation</li>
         </ul>
       </div>
- 
+
       <div class="sim-card fade-in fade-in-delay-1">
         <div class="sim-header">
           <span class="sim-company">Goldman Sachs · Forage</span>
@@ -1167,7 +1166,7 @@
           <li>Demonstrated trade lifecycle understanding — execution → settlement → reconciliation — with cross-functional coordination across Trading, Compliance, and IT</li>
         </ul>
       </div>
- 
+
       <div class="sim-card fade-in">
         <div class="sim-header">
           <span class="sim-company">TCS · Forage</span>
@@ -1179,7 +1178,7 @@
           <li>Scored 5 sustainability tools against 9 criteria using a structured yes/no framework, identifying best-fit solution and uncovering gaps</li>
         </ul>
       </div>
- 
+
       <div class="sim-card fade-in fade-in-delay-1">
         <div class="sim-header">
           <span class="sim-company">Bloomberg · Forage</span>
@@ -1191,7 +1190,7 @@
           <li>Applied data visualization selection principles and B2B value-based sales communication to financial product development and investor-facing media scenarios</li>
         </ul>
       </div>
- 
+
       <div class="sim-card sim-mckinsey fade-in">
         <div class="sim-header">
           <span class="sim-company">McKinsey &amp; Company</span>
@@ -1203,11 +1202,11 @@
           <li>Developed practical skills in defining and prioritizing problems systematically and structuring messages for stakeholder impact</li>
         </ul>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- PROJECTS -->
 <section id="projects">
   <div class="container">
@@ -1217,7 +1216,7 @@
       <p>From macro-economic studies to financial statement deep-dives — work that goes beyond the classroom.</p>
     </div>
     <div class="projects-grid">
- 
+
       <div class="project-card featured fade-in">
         <div class="project-tag">BBA Thesis &nbsp;·&nbsp; Featured</div>
         <div class="project-title">A Study of U.S. Tariff &amp; Global Economic Shifts and Their Impact on India's Currency and Trade</div>
@@ -1233,7 +1232,7 @@
           <span class="project-highlight">Pre/Shock/Post-COVID Comparison</span>
         </div>
       </div>
- 
+
       <div class="project-card fade-in">
         <div class="project-tag">Academic Project &nbsp;·&nbsp; Published</div>
         <div class="project-title">Financial Statement Analysis — Tesla Inc.</div>
@@ -1247,7 +1246,7 @@
           <span class="project-highlight">3-Year YoY Trend Analysis</span>
         </div>
       </div>
- 
+
       <div class="project-card fade-in">
         <div class="project-tag">Academic Project &nbsp;·&nbsp; Published</div>
         <div class="project-title">Customer Preference Study — Air India vs IndiGo</div>
@@ -1261,11 +1260,11 @@
           <span class="project-highlight">Brand Positioning Insights</span>
         </div>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- EDUCATION -->
 <section id="education">
   <div class="container">
@@ -1307,7 +1306,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- SELF-INITIATED FINANCE PROJECTS -->
 <section id="self-projects">
   <div class="container">
@@ -1317,7 +1316,7 @@
       <p>Finance operations tools built independently in Excel — real-world models, real-world logic.</p>
     </div>
     <div class="self-proj-grid">
- 
+
       <div class="self-proj-card fade-in">
         <div class="self-proj-date">Jul 2026</div>
         <div class="self-proj-title">Trade Settlement Tracker</div>
@@ -1326,7 +1325,7 @@
           <li>Implemented T+2 breach detection, exception flagging, and break escalation logic with a settlement dashboard showing settlement rate, total notional, and instrument-wise breakdown across counterparties</li>
         </ul>
       </div>
- 
+
       <div class="self-proj-card fade-in fade-in-delay-1">
         <div class="self-proj-date">Jul 2026</div>
         <div class="self-proj-title">Collateral Management Dashboard</div>
@@ -1335,7 +1334,7 @@
           <li>Built portfolio summary with collateral type concentration analysis and margin call identification for immediate desk action</li>
         </ul>
       </div>
- 
+
       <div class="self-proj-card fade-in">
         <div class="self-proj-date">Jul 2026</div>
         <div class="self-proj-title">Financial Instruments Analysis Model</div>
@@ -1344,7 +1343,7 @@
           <li>Built settlement cycle reference model covering T+1 to T+0 processes across DTCC, CLS, LCH, Euroclear, Fedwire, and exchange clearing platforms — directly relevant to JPMorgan operations context</li>
         </ul>
       </div>
- 
+
       <div class="self-proj-card fade-in fade-in-delay-1">
         <div class="self-proj-date">Jul 2026</div>
         <div class="self-proj-title">Finance Operations MIS Dashboard</div>
@@ -1353,11 +1352,11 @@
           <li>Automated overdue flagging, duplicate invoice detection, and budget vs actual variance reporting with executive summary dashboard for management reporting</li>
         </ul>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="container">
@@ -1434,7 +1433,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- AWARDS & LEADERSHIP -->
 <section id="awards">
   <div class="container">
@@ -1490,7 +1489,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- THOUGHTS -->
 <section id="thoughts">
   <div class="container">
@@ -1512,7 +1511,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
@@ -1521,8 +1520,7 @@
       <h2 class="section-title">Let's Connect &amp;<br/>Build Together.</h2>
       <p>Open to Finance Operations, MIS/Reporting, and Analyst roles at MNCs and BFSI firms.</p>
     </div>
-    <div class="contact-grid">
-      <div class="contact-info fade-in">
+    <div class="contact-info-only fade-in">
         <div class="contact-item">
           <div class="contact-icon">✆</div>
           <div class="contact-detail">
@@ -1558,28 +1556,13 @@
             <div class="contact-detail-val">Hyderabad, India &nbsp;·&nbsp; Open to Relocation</div>
           </div>
         </div>
-      </div>
-      <div class="fade-in fade-in-delay-1">
-        <div class="contact-form">
-          <div class="form-group">
-            <label class="form-label">Your Name</label>
-            <input type="text" class="form-input" placeholder="e.g. Rahul Mehta" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label>
-            <input type="email" class="form-input" placeholder="you@company.com" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea class="form-textarea" placeholder="Tell me about the opportunity..."></textarea>
-          </div>
-          <a href="mailto:jatin.sharma2178@gmail.com" class="btn-primary" style="text-align:center; justify-content:center;">Send Message →</a>
+        <div style="margin-top:2rem;">
+          <a href="https://mail.google.com/mail/?view=cm&to=jatin.sharma2178@gmail.com&su=Hello+Jatin+-+Portfolio+Enquiry" target="_blank" rel="noopener" class="btn-primary">Send Me an Email →</a>
         </div>
       </div>
-    </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">
@@ -1595,26 +1578,44 @@
     <a href="https://jatinsharma04.github.io/portfolio" target="_blank" rel="noopener">GitHub</a>
   </div>
 </footer>
- 
+
 <script>
+  // Contact form mailto
+  function sendMail() {
+    const name    = document.getElementById('contact-name').value.trim();
+    const email   = document.getElementById('contact-email').value.trim();
+    const message = document.getElementById('contact-message').value.trim();
+    if (!name || !message) {
+      alert('Please fill in your name and message before sending.');
+      return;
+    }
+    const subject = encodeURIComponent('Portfolio Enquiry from ' + name);
+    const body    = encodeURIComponent(
+      'Hi Jatin,\n\n' + message +
+      '\n\n---\nFrom: ' + name +
+      (email ? '\nReply to: ' + email : '')
+    );
+    window.location.href = 'mailto:jatin.sharma2178@gmail.com?subject=' + subject + '&body=' + body;
+  }
+
   // NAV scroll behaviour
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
   });
- 
+
   // Hamburger
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
- 
+
   // Intersection observer for fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
- 
+
   // Skill bar animation
   const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -1630,4 +1631,3 @@
 </script>
 </body>
 </html>
- 
